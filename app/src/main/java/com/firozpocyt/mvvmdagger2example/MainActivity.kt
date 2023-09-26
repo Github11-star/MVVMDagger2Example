@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         (application as FakerApplication).applicationComponent.inject(this)
 
+        val map = (application as FakerApplication).applicationComponent.getMap()
+
         mainViewModel = ViewModelProvider(this, mainViewModelFactory).get(MainViewModel::class.java)
 
         mainViewModel.productLiveData.observe(this, Observer {
