@@ -70,14 +70,14 @@ dependencies {
     implementation ("com.squareup.retrofit2:converter-gson:$retrofit_version")
 
 
-    val room_version = ("2.4.3")
+    val room_version = ("2.5.2")
     implementation ("androidx.room:room-runtime:$room_version")
     implementation ("androidx.room:room-ktx:$room_version")
     kapt ("androidx.room:room-compiler:$room_version")
 
-    implementation ("androidx.room:room-runtime:2.4.0-alpha03")
+    /*implementation ("androidx.room:room-runtime:2.4.0-alpha03")
     annotationProcessor ("androidx.room:room-compiler:2.4.0-alpha03")
-    kapt ("androidx.room:room-compiler:2.4.0-alpha03")
+    kapt ("androidx.room:room-compiler:2.4.0-alpha03")*/
 
     val coroutines_version = ("1.6.4")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version")
